@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<section id="about">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h1 class="display-4">About Herbal Net</h1>
+        <h3>What it is about?</h3>
+        <p>Herbal Net aims to address this challenge by harnessing the power of image processing and machine learning. Our project is inspired by the need to identify medicinal plants and raw materials accurately, ultimately benefiting wholesalers, distributors, and the entire supply chain of these valuable resources.</p>
+        <h3>Initial works:</h3>
+        <p>Our journey began with a well-processed dataset containing images of leaves from 30 different species. We employed the ResNet-50 architecture, making slight modifications to the classification layer to suit our dataset and features. The initial model achieved an impressive accuracy of over 90% on validation and testing data within just 10 epochs.</p>
+        <h3>Shortcomings:</h3>
+        <p>However, we recognized that real-world scenarios often present challenges that go beyond an ideal dataset. Real leaves don't always come neatly against a white background, and seasonal and geographical variations can add complexity to identification.</p>
+        <h3>Realisation:</h3>
+        <p>This realization led us to embark on Version 2 of Herbal Net. In this iteration, we're working with an 80-species dataset, featuring unprocessed images that better mimic real-world conditions. To tackle this new challenge, we've designed a custom architecture.</p>
+        <h3>Final version:</h3>
+        <p>Our future plans are clear: we aim to complete Version 2 of Herbal Net, one that excels in real-world scenarios. With this upgraded tool, we hope to contribute to the accurate identification of medicinal plants, combatting issues of adulteration, substitution, and disbelief in the curative capabilities of the Ayurvedic system.</p>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
